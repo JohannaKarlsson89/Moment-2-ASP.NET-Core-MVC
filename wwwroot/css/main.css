@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* ERROR MEDDELANDE*/
+form span {
+    color: red;
+}
+div {
+    color: 
+    black;
+}
+
+/* NAVIGATION MOBIL*/
+ .desktopMenu {
+    display: none;
+ }
+  .menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+  }
+   .closeIcon {
+    display: none;
+  }
+  
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+ 
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: aquamarine;
+    color: black;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+
+  /* MAIN CONTENT */
+  .main-content {
+    background-color: aquamarine;
+    width: 95%;
+    padding: 2%;
+    margin: 2% auto;
+  }
+  .main-content h2 {
+    text-align: center;
+    margin-bottom: 1%;
+  }
+  .center-text {
+    text-align: center;
+  }
+
+.GoToButton {
+  background-color: aquamarine;
+  color: black;
+  text-decoration: none;
+  margin: 2% 0;
+  padding: 1%;
+}
+
+.GoToButton:hover {
+  background-color: rgb(93, 190, 158);
+  text-decoration: underline;
+ 
+}
+  /* TOP MESSAGE */
+  .top-message {
+    background-color: white;
+    text-align: center;
+    padding: 4% 0;
+    margin-bottom: 2%;
+    border: white;
+    border-radius: 5px;
+  }
+  .aboutpage-text  {
+   text-align: left;
+   padding: 2%;
+  }
+  
+  /* FORM */
+  form {
+    background-color: white;
+    padding: 4%;
+    margin: 3% 0;
+  }
+  form input {
+    margin: 1%;
+    
+  } 
+  .submit {
+      background-color: aquamarine;
+      border: rgb(96, 201, 166);
+      width: 180px;
+      padding: 2%;
+    }
+    .submit:hover {
+      text-decoration: underline;
+      background-color: rgb(93, 190, 158);
+    } 
+
+
+    /* TABLE */
+   table {
+    background-color: aliceblue;
+    width: 100%;
+   } 
+   table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1%;
+  }
+  tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+  .table-container {
+    overflow-x:auto;
+  }
+
+  /* FOOTER */
+  footer {
+    background-color: aquamarine;
+    text-align: center;
+    padding:  2% 4%;
+    width: 95%;
+    margin: auto;
+  }
+  @media only screen and (min-width: 700px) {
+   
+    header li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 20px;   
+    }
+    #nav-title {
+        margin-right: auto;
+        font-size: 1.5em;
+    }
+    
+    /* NAVIGATON DESKTOP*/
+    .mobileMenu {
+        display: none;
+    }  
+    .desktopMenu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 2% 2%;
+      
+    }  
+    .nav-link{
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    } 
+
+    /* FORM */
+    form input {
+      margin: 0.5% 0;
+    
+    } 
+    .submit {
+      width: 180px;
+      padding: 1%;
+    }
+    form {
+     width: 60%;
+     margin: 2% auto;
+    }
+}

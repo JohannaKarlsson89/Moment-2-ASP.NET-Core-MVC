@@ -1,0 +1,36 @@
+@model List<Dogs.Models.DogModel>
+@{
+ViewData["Title"] = "Startsida";
+
+}
+
+<div class="top-message">
+<h1>Adopt don't shop!</h1>
+<p>Vi förmedlar hundar som letar efter nya hem</p>
+<br>
+<!-- PARTIAL -->
+@Html.Partial("_GoToButton")
+</div>
+
+<h2>Hundar som kan adopteras</h2>
+
+<div class="table-container">
+<table>
+    <thead>
+        <th>Namn</th>
+        <th>Ras</th>
+        <th>Ålder</th>
+        <th>Kön</th>
+        <th>Kastrerad</th>
+             @foreach (var dog in Model)
+    {
+        <tr>
+        <td>@dog.Name</td>
+        <td>@dog.Breed</td>
+        <td>@dog.Age</td>
+        <td>@dog.Gender</td>
+        <td>@dog.Neutered</td>
+        </tr> 
+    }
+    </thead>
+</table></div>

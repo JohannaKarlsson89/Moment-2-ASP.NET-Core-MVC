@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "Malte",
+    "Age": 9,
+    "Breed": "Kungspudel",
+    "Email": "johannahelenakarlsson@gmail.com",
+    "Gender": "Hane",
+    "Neutered": "Kastrerad",
+    "Approve": true
+  },
+  {
+    "Name": "Ronja",
+    "Age": 4,
+    "Breed": "Schäfer",
+    "Email": "johannahelenakarlsson@gmail.com",
+    "Gender": "Tik",
+    "Neutered": "Kastrerad",
+    "Approve": true
+  },
+  {
+    "Name": "Kotten",
+    "Age": 2,
+    "Breed": "Dansk Svensk Gårdshund",
+    "Email": "johannahelenakarlsson@gmail.com",
+    "Gender": "Hane",
+    "Neutered": "Kastrerad",
+    "Approve": true
+  },
+  {
+    "Name": "jerry",
+    "Age": 5,
+    "Breed": "Boxer",
+    "Email": "johannahelenakarlsson@gmail.com",
+    "Gender": "Hane",
+    "Neutered": "Inte Kastrerad",
+    "Approve": true
+  }
+]

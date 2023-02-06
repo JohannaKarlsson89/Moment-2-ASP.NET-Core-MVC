@@ -1,0 +1,46 @@
+@model Dogs.Models.DogModel
+@{
+ViewData["Title"] = "Hundar";
+}
+
+<h2>Anmäl en hund</h2>
+<p class="center-text">Här lägger du till information om den hund som behöver ett nytt hem.</p>
+<div class="form">
+<form method="post">
+
+<label asp-for="Name"></label><br>
+<input asp-for="Name">
+<span asp-validation-for="Name"></span>
+<br>
+<label asp-for="Age"></label><br>
+<input asp-for="Age">
+<span asp-validation-for="Age"></span>
+<br>
+<label asp-for="Breed"></label><br>
+<input asp-for="Breed">
+<span asp-validation-for="Breed"></span>
+<br>
+<label asp-for="Gender"></label>
+    <br>
+    <select asp-for="Gender">
+        <option value=""></option>
+        <option value="Hane">Hane</option>
+        <option value="Tik">Tik</option>
+    </select>
+    <span asp-validation-for="Gender"></span>
+<br><br>
+<label><input asp-for="Neutered" value="Kastrerad" type="radio" />Kastrerad</label>
+<label><input asp-for="Neutered" value="Inte Kastrerad" type="radio"/>Inte Kastrerad</label>
+<span asp-validation-for="Neutered"></span>
+<br><br>
+<label asp-for="Email"></label><br>
+<input asp-for="Email">
+<span asp-validation-for="Email"></span>
+<br>
+<br>
+<label asp-for="Approve"></label>
+<input asp-for="Approve" />
+<span asp-validation-for="Approve"></span>
+<br><br>
+<input type="submit" value="Anmäl hund" class="submit">
+</form></div>

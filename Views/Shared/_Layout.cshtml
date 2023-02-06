@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>@ViewData["Title"] - ASP.NET core MVC</title>
+     <!-- Material Icon CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+ <div class="mobileMenu">       
+    <img src="pictures/loggahund.png" alt="Logotyp">
+
+        <nav>
+            <ul class="menu">
+                <li><a asp-controller="Home" asp-action="Index" class="menuItem">Hem</a></li>
+                <li><a asp-controller="Home" asp-action="About" class="menuItem">Om oss</a></li>
+                <li><a asp-controller="Home" asp-action="Dogs" class="menuItem">Anmäl hund</a></li>
+            </ul>
+              <button class="hamburger">
+    <!-- material icons https://material.io/resources/icons/ -->
+    <i class="menuIcon material-icons">menu</i>
+    <i class="closeIcon material-icons" id="closeIcon">close</i>
+  </button>
+        </nav>
+        </div>
+
+<div class="desktopMenu">
+     <img id="nav-title" src="pictures/loggahund.png" alt="Logotyp">
+    <nav>
+          <ul>
+                <li><a asp-controller="Home" asp-action="Index" class="nav-link">Hem</a></li>
+                <li><a asp-controller="Home" asp-action="About" class="nav-link">Om oss</a></li>
+                <li><a asp-controller="Home" asp-action="Dogs" class="nav-link">Anmäl hund</a></li>
+            </ul>
+    </nav>
+</div>
+
+    </header> 
+    <main class="main-content">
+        @RenderBody()
+    </main>
+    <footer>
+        <p>Johanna Karlsson</p>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+
+
+</html>
